@@ -224,7 +224,7 @@ body {
   position: relative;
   margin-top: -35px;
   padding: 140px 0;
-  background: url("/src/img/delivery/deliveri.jpg") no-repeat center/cover;
+  background: url("../img/deliveri.jpg") no-repeat center/cover;
 }
 
 .delivery-buttons {
