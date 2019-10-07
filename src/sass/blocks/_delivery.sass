@@ -1,0 +1,52 @@
+.delivery
+  position: relative
+  margin-top: -35px
+  padding: 140px 0
+  // background-color: $colo-bg
+  background: url('/src/img/delivery/deliveri.jpg') no-repeat center / cover
+  &-buttons
+    display: flex
+    align-items: center
+  &__title
+    margin-bottom: 40px
+    font-size: 36px
+    color: #ffffff
+    text-transform: uppercase
+    +bold
+  &__subtitle
+    margin-bottom: 65px
+    max-width: 340px
+    font-size: 15px
+    line-height: 124%
+    letter-spacing: 0.9px
+    +reg
+    color: #ffffff
+  &__btn
+    margin-right: 30px
+    padding: 20px 30px
+    color: $text-color__black
+    background: $primery-color
+    text-decoration: none
+    +bold
+  &__and
+    color: #ffffff
+    margin-right: 10px
+  &__catalog
+    color: #ffffff
+@media ( max-width: 768px )
+  .delivery
+    margin-top: -60px
+@media ( max-width: 520px )
+  .delivery
+    &-buttons
+      flex-direction: column
+      align-items: flex-start
+    &__btn,
+    &__and
+      margin-bottom: 10px
+@media ( max-width: 430px )
+  .delivery
+    padding: 150px 0
+    margin-top: -90px
+    &__title
+      font-size: 27px

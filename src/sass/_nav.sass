@@ -1,0 +1,29 @@
+.nav
+  position: relative
+  z-index: 999999
+  &-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background-color: $primery-color
+  &__link
+    padding: 25px 0
+    +bold
+    color: $text-color__black
+    text-decoration: none
+.menu
+  width: 25px
+@media ( max-width: 768px )
+  .nav
+    &-wrap
+      flex-direction: row
+      flex-wrap: wrap
+      text-align: center
+    &__link
+      padding: 20px 10px
+      flex-basis: 33.33%
+@media ( max-width: 420px )
+  .nav
+    &__link
+      padding: 20px 10px
+      flex-basis: 50%

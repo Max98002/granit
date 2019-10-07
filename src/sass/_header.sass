@@ -44,4 +44,14 @@
       color: $text-color__grey
   &__button
     border: 2px solid #292929
-    
+@media ( max-width: 768px )
+  .header
+    &-info
+      &__contact
+        display: none
+@media ( max-width: 520px )
+  .header
+    &-logo
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start

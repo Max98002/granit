@@ -23,7 +23,18 @@ body
   +bold
   background: transparent
 
-
 .container
-  max-width: 1040px
+  max-width: 1170px
   margin: 0 auto
+
+@media ( max-width: 1200px )
+  .container
+    max-width: 1040px
+    width: 90%
+@media ( max-width: 768px )
+  .container
+    max-width: 640px
+    width: 90%
+@media ( max-width: 520px )
+  .button
+    padding: 12px 20px
