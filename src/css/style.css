@@ -6,14 +6,123 @@
 input,
 button {
   outline: none;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  padding: 15px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  background: transparent;
+}
+
 .container {
-  width: 1040px;
+  max-width: 1040px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header__img {
+  margin-right: 15px;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-logo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-logo__title {
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header-logo__subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  color: #969696;
+}
+
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-info__contact {
+  margin-right: 31px;
+  text-align: right;
+}
+
+.header-info__phone {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-info__subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  color: #969696;
+}
+
+.header__button {
+  border: 2px solid #292929;
 }
 /*# sourceMappingURL=style.css.map */
