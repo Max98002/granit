@@ -18,10 +18,17 @@ img
 body
   +font
 .button
-  padding: 15px 23px
-  font-size: 12px
+  padding: 20px 55px
+  background-color: $primery-color
   +bold
-  background: transparent
+  font-size: 12px
+  border: none
+  &:hover
+    text-decoration: underline
+    background-color: darken($primery-color, 10%)
+    color: #ffffff
+    transition: all 0.3s
+
 
 .container
   max-width: 1170px
@@ -38,3 +45,13 @@ body
 @media ( max-width: 520px )
   .button
     padding: 12px 20px
+.section
+  padding: 80px 0
+  &__title
+    text-align: center
+    margin: 0
+    margin-bottom: 60px
+    font-size: 20px
+    +bold
+    text-transform: uppercase
+    color: $color-section

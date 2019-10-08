@@ -1,0 +1,43 @@
+.hotproduct
+  &-wrap 
+    display: flex
+    justify-content: space-around
+    align-items: stretch
+    flex-wrap: wrap
+    &__card
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      padding: 20px
+      margin-bottom: 15px
+      border: 2px solid #f6f6f6
+      transition: all 0.5s
+      border-radius: 2px
+      &:hover
+       box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    &__title
+      margin-bottom: 24px
+      max-width: 183px
+      font-size: 13px
+      text-decoration: underline
+  &-description
+    margin-bottom: 25px
+    &__oldprice
+      font-size: 10px
+      text-decoration: line-through
+      color: #979797
+    &__newprice
+      color: #ff0000
+      font-size: 16px
+      +bold
+      &:nth-of-type(1)
+        color: black
+@media ( max-width: 520px )
+  .hotproduct
+    &-wrap
+      &__card
+        flex-basis: 100%
+    &__button
+      width: 60%

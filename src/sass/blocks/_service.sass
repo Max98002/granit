@@ -1,0 +1,21 @@
+.services
+  background: $section-bg
+  &-wrap
+    display: flex
+    justify-content: space-around
+    align-items: stretch
+    flex-wrap: wrap
+    text-align: center
+    &__card
+      padding: 40px
+      margin-bottom: 15px
+      border: 2px solid #ffffff
+      transition: all 0.5s
+      &:hover
+        background: #ffffff
+    &__title
+      font-size: 15px
+      +bold
+      &:hover
+        text-decoration: underline
+        cursor: pointer
