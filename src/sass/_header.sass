@@ -1,10 +1,15 @@
 .header
-  position: relative
   z-index: 9999
   padding: 30px 0
+  margin-bottom: 30px
   &__img
     margin-right: 15px
+  &__btn
+    max-width: 30px
+    &:hover
+      cursor: pointer
   &-block
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
@@ -29,7 +34,9 @@
       color: $text-color__grey
   &-info
     display: flex
+    justify-content: flex-end
     align-items: center
+    flex-basis: 65%
     &__contact
       margin-right: 31px
       text-align: right
@@ -50,9 +57,16 @@
     font-size: 12px
     +bold
     background: transparent
+@media ( max-width: 960px )
+  .header
+    &-info
+      flex-basis: 50%
+      &__contact
+        display: none
 @media ( max-width: 768px )
   .header
     background: #ffffff
+    margin-bottom: 50px
     &-info
       &__contact
         display: none
@@ -62,3 +76,5 @@
       flex-direction: column
       justify-content: center
       align-items: flex-start
+    &__btn
+      max-width: 15px

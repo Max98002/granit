@@ -77,16 +77,25 @@ body {
 }
 
 .header {
-  position: relative;
   z-index: 9999;
   padding: 30px 0;
+  margin-bottom: 30px;
 }
 
 .header__img {
   margin-right: 15px;
 }
 
+.header__btn {
+  max-width: 30px;
+}
+
+.header__btn:hover {
+  cursor: pointer;
+}
+
 .header-block {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,9 +151,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
 }
 
 .header-info__contact {
@@ -175,9 +189,20 @@ body {
   background: transparent;
 }
 
+@media (max-width: 960px) {
+  .header-info {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .header-info__contact {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     background: #ffffff;
+    margin-bottom: 50px;
   }
   .header-info__contact {
     display: none;
@@ -197,11 +222,24 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .header__btn {
+    max-width: 15px;
+  }
 }
 
 .nav {
-  position: relative;
+  position: absolute;
   z-index: 999999;
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateY(-249%);
+          transform: translateY(-249%);
+}
+
+.nav_active {
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
 }
 
 .nav-wrap {
@@ -217,14 +255,10 @@ body {
 }
 
 .nav__link {
-  padding: 25px 0;
+  padding: 15px 0;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-}
-
-.menu {
-  width: 25px;
 }
 
 @media (max-width: 768px) {
@@ -244,6 +278,10 @@ body {
     padding: 20px 10px;
     -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%;
+  }
+  .nav_active {
+    -webkit-transform: translateY(87%);
+            transform: translateY(87%);
   }
 }
 
