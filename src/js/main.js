@@ -4,5 +4,6 @@ $(document).ready(function(){
 
   menubtn.on('click', function(){
     nav.toggleClass('nav_active');
-  })
+  });
+
 });

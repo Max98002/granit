@@ -1,7 +1,7 @@
 .header
-  z-index: 9999
-  padding: 30px 0
-  margin-bottom: 30px
+  padding: 25px 0
+  width: 100%
+  background: #ffffff
   &__img
     margin-right: 15px
   &__btn
@@ -10,6 +10,7 @@
       cursor: pointer
   &-block
     position: relative
+    z-index: 999
     display: flex
     justify-content: space-between
     align-items: center
@@ -60,21 +61,33 @@
 @media ( max-width: 960px )
   .header
     &-info
-      flex-basis: 50%
+      flex-basis: 35%
       &__contact
         display: none
 @media ( max-width: 768px )
   .header
+    padding: 18px 0
     background: #ffffff
-    margin-bottom: 50px
     &-info
       &__contact
         display: none
 @media ( max-width: 520px )
   .header
+    &-info
+      flex-basis: 37%
     &-logo
       flex-direction: column
       justify-content: center
       align-items: flex-start
+    &__button
+      padding: 8px 8px
     &__btn
-      max-width: 15px
+      max-width: 25px
+@media ( max-width: 420px )
+  .header
+    &-logo  
+      &__title
+        font-size: 17px
+      &__subtitle
+        font-size: 10px
+        max-width: 135px
