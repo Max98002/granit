@@ -81,8 +81,7 @@ body {
   padding: 25px 0;
   width: 100%;
   background: #ffffff;
-  position: relative;
-  z-index: 1;
+  position: fixed;
 }
 
 .header__img {
@@ -313,7 +312,8 @@ body {
 }
 
 .delivery {
-  padding: 140px 0;
+  padding-top: 230px;
+  padding-bottom: 140px;
   background: url("../img/deliveri.jpg") no-repeat #303030 center/cover;
 }
 
